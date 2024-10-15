@@ -3,7 +3,7 @@ name: Playwright Tests
 on:
   push:
     branches:
-      - lab1
+      - e2e_tests_1laba
 
 jobs:
   test:
@@ -28,4 +28,4 @@ jobs:
 
     - name: Run tests with Playwright
       run: |
-        npx playwright test --max-fail=1 --reporter=html
+        npx playwright test --reporter=html --reporter=dot
