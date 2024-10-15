@@ -3,7 +3,7 @@ name: Playwright Tests
 on:
   push:
     branches:
-      - e2e_tests_1laba
+      - lab1
 
 jobs:
   test:
