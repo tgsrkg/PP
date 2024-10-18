@@ -6,6 +6,8 @@ class ProductsPage {
     this.productContainer = ".inventory_item";
     this.cartBadge = ".shopping_cart_badge";
     this.cartButton = ".shopping_cart_link";
+    this.priceBar = ".pricebar";
+    this.addToCartButtonSelector = "button";
   }
 
   async addProductToCart(productName) {
@@ -13,8 +15,8 @@ class ProductsPage {
       .locator(this.productContainer)
       .filter({ hasText: productName });
 
-    const priceBar = productElement.locator(".pricebar");
-    const addToCartButton = priceBar.locator("button");
+    const priceBar = productElement.locator(this.priceBar);
+    const addToCartButton = priceBar.locator(this.addToCartButtonSelector);
     await addToCartButton.click();
   }
 
