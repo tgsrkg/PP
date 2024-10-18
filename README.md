@@ -1,3 +1,4 @@
+
 # Лабораторная 1
 
 Проект для автоматизированного тестирования сайта [SauceDemo](https://www.saucedemo.com/) с использованием Playwright и JavaScript.
